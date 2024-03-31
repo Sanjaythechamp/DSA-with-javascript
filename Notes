@@ -1,4 +1,5 @@
  return:
+-------------
 
           The return statement is used to end the execution of a function and specifies the value to
           be returned by that function. When a return statement is encountered, the function immediately stops
@@ -7,5 +8,40 @@
 
 
 break:
+----------
 
             When a break statement is encountered within a loop, the loop is immediately terminated, and the program continues with the next statement following the loop. 
+
+
+memory constrain :
+--------------------
+Node.js applications running on servers or other environments typically have access to 
+more memory than browser-based JavaScript applications due to several factors:
+
+what are browser-based javascript application?
+-----------------------------------------------------
+
+Browser-based JavaScript applications, also known as web applications, run within a web browser 
+environment and are primarily designed to be executed on client devices such
+as desktop computers, laptops, smartphones, and tablets
+
+
+ in JavaScript, arrays are dynamic and resizable, and you don't need to specify
+a fixed size when declaring an array. You can add elements to the array dynamically, 
+and it will resize itself as needed. Therefore, there is no predefined limit on the number
+of elements you can store in a JavaScript array,
+0ther than the memory constraints of the environment in which the JavaScript code is running.
+
+//  C LANGUAGE MEMORY CONSTRAIN TO VARIABLES : 
+------------------------------------------------
+Bits: A bit is the smallest unit of data in a computer, representing a binary digit - either 0 or 1
+Bytes: A byte is a unit of digital information that consists of 8 bits.
+
+
+one byte = 8 bits 
+INTEGER  -> 4 BYTES [2power32 unique values we stores]
+float -> 4  Bytes[  ,, ]
+char -> 1 byte[ 2 power 8 unique values stores]
+double -> 8 bytes[2 power 64 unique values]
+
+
