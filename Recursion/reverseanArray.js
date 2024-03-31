@@ -5,53 +5,29 @@
 function swap(index , end, arr){   // we also take end as = arr.length-1
 
     if(index >=end ){
-        return ;
+        return arr;
     }
     else{
         temp = arr[index];
        arr[index] = arr[end];
         arr[end]= temp;
-        console.log(` ${arr[index]}`)
-        
+    
         index++;
         end--;
-   
 
     }
     
-
-   swap(index,end,arr);
-   console.log(`${arr[end]}`)
+      return swap(index,end,arr);   
 
 }
 
 let n = 6;
 let arr = [1,2,3,4,5,6]
-swap(0,n-1, arr)
+ let result = swap(0,n-1, arr);
+ console.log(`The result is ${result}`)
+
+
+
 */
-function swap(index, end, arr) {
-    if (index >= end) {
-        return arr; // Return the modified array
-    }
-    else {
-        // Swap elements
-        let temp = arr[index];
-        arr[index] = arr[end];
-        arr[end] = temp;
-
-        // Increment index and decrement end
-        index++;
-        end--;
-
-        // Recursive call
-        
-    }
-    return swap(index, end, arr);
-}
-
-let n = 6;
-let arr = [1, 2, 3, 4, 5, 6];
-arr = swap(0, n - 1, arr); // Store the result after swapping
-
-console.log(arr); // Output: [6, 5, 4, 3, 2, 1]
+ // 2nd Method : can we reduce the variables:
 
