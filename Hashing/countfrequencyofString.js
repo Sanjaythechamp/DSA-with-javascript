@@ -1,3 +1,11 @@
+// example
+const str = "Hello";
+const unicodeValue = str.charCodeAt(0);
+console.log(unicodeValue); // Output: 72  it returns the Unicode value of the character "H", which is 72 according to the ASCII/Unicode table.
+Keep in mind that charCodeAt() returns NaN if the given index is out of range or if the specified character cannot be found.
+
+  CODE START FROM HERE   
+    
 let arr = ['a', 'a', 'b', 'v', 'a'];
 
 let hash = new Array(256).fill(0);    
