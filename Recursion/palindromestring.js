@@ -1,5 +1,5 @@
 
-
+// important  JavaScript allows arrays to hold elements of mixed types
 
 
 
