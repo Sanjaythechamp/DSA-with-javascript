@@ -21,7 +21,7 @@ if(didswap === 0){
 return arr;
 }
 
-let arr = [9,46,52,20,4,3];
+let arr = [9,6,52,20,4,3];
  let result = BubbleSort(arr.length);
  console.log(`The Bubble Sort value occur is ${result}`);
 

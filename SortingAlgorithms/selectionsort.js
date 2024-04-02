@@ -14,7 +14,7 @@ function selectionSort(n){
 }
 
 
-let arr = [13,46,24,52,20,9]
+let arr = [13,46,24,2,20,9]
 
   let result = selectionSort(arr.length)
   console.log(`The selection sort is ${result}`)
