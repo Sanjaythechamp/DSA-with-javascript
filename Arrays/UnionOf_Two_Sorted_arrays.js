@@ -46,6 +46,52 @@ Therefore, the total time complexity of the provided code is O(N + M), where N i
 // SC -> O(N)
 
 
-// BETTER SOLUTION :
+// Optimal Solution:
 
 
+function union() {
+    let arr1 = [1, 2, 2, 3, 4];
+    let arr2 = [1, 1, 2, 2, 4, 6, 7];
+    let n1 = arr1.length;
+    let n2 = arr2.length;
+
+    let i = 0;
+    let j = 0;
+    let union_arr = [];
+
+    while (i < n1 && j < n2) {
+        if (arr1[i] <= arr2[j]) {
+            if (union_arr.length === 0 || union_arr[union_arr.length - 1] !== arr1[i]) {
+                union_arr.push(arr1[i]);
+            }
+            i++;
+        } else {
+            if (union_arr.length === 0 || union_arr[union_arr.length - 1] !== arr2[j]) {
+                union_arr.push(arr2[j]);
+            }
+            j++;
+        }
+    }
+
+    while (j < n2) {
+        if (union_arr.length === 0 || union_arr[union_arr.length - 1] !== arr2[j]) {
+            union_arr.push(arr2[j]);
+        }
+        j++;
+    }
+
+    while (i < n1) {
+        if (union_arr.length === 0 || union_arr[union_arr.length - 1] !== arr1[i]) {
+            union_arr.push(arr1[i]);
+        }
+        i++;
+    }
+
+    return union_arr;
+}
+
+let res = union();
+console.log(`The optimal solution of union of two sorted arrays is ${res}`);
+
+// Tc O(n1+n2)
+//sc is O(n1+n2)
