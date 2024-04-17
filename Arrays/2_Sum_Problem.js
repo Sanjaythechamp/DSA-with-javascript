@@ -65,3 +65,26 @@ console.log(`The value present  is ${res}`)
 
 
 // optimal solution  :: 
+let arr = [2,6,5,8,11];
+let n = arr.length;
+let target =14;
+let left = 0;
+let right = n-1;
+let sum = 0;
+while(left<right){
+    sum = arr[left]+arr[right];
+if(sum === target){
+    console.log("yes");
+    console.log(`target is achieved at ${left} ,${right} index`)
+    return "yes";
+}
+else if(sum > target){
+    right--;
+}
+else{
+    left++;
+}
+}
+console.log("NOt achieved");
+return "no";
+//tc is O(n)
