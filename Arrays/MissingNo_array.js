@@ -74,6 +74,8 @@ for(let i= 0 ;i<arr.length-1;i++){
  */
 
  // optimal approach of this code is :  
+
+ 
  //condition is natural no in sorted order
 
 // using sum 
