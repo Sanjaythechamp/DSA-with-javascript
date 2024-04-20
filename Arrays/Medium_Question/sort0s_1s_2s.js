@@ -1,7 +1,8 @@
 // Brute force method:
 // using any sorting algorithm :
 
-// Better solution : USING DUTCH NATIONAL FLAG ALGORITHM 
+// Better solution 
+
  let arr = [0,1,1,0,1,2,1,2,0,0,0]
  let cnt0 = 0;
  let cnt1 = 0;
@@ -44,11 +45,11 @@ for(let i=0;i<n;i++){
 
 
 
-// OPTIMAL SOLUTION 
+// OPTIMAL SOLUTION  : USING DUTCH NATIONAL FLAG ALGORITHM :
 
 /*
 
-function sort(){
+function sort(){                // here sort is sort_0s_1s_2s function 
 
 let arr = [0,1,1,0,1,2,1,2,0,0,0]
 let n = arr.length;
