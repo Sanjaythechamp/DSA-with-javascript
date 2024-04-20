@@ -3,7 +3,7 @@
 
 
 
-
+// better solution using hashmap
 // optimal solution :
 
 // MOORE'S VOTING ALGORITHM :
