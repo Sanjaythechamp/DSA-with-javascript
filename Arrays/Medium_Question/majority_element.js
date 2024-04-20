@@ -3,7 +3,10 @@
 
 
 
+
 // optimal solution :
+
+// MOORE'S VOTING ALGORITHM :
 let arr = [9, 4, 3, 9, 9, 4, 9, 9, 8]
 //let arr = [7,7,5,7,5,1,5,7,5,5,7,7,5,5,5,5];
 let n = arr.length;

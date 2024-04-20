@@ -1,7 +1,7 @@
 // Brute force method:
 // using any sorting algorithm :
 
-// Better solution :
+// Better solution : USING DUTCH NATIONAL FLAG ALGORITHM 
  let arr = [0,1,1,0,1,2,1,2,0,0,0]
  let cnt0 = 0;
  let cnt1 = 0;
