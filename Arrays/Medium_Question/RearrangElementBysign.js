@@ -1,7 +1,7 @@
 
 // Brute force Method : 
-
-function rearrange(){
+/*
+function RearrangeElementsBysign(){
     let arr = [3,1,-2,-5,2,-4]
 let positives = [];
 let Negatives = [];
@@ -34,7 +34,7 @@ for(let i=0;i<arr.length;i++){
 return arr;
 }
 
-let res = rearrange();
+let res = RearrangeElementsBysign();
 
 console.log(res);
 
@@ -42,3 +42,35 @@ console.log(res);
 // tc is O(N + N)
 // if array contain equal positive and and equal negatives then sc is O(n/2 + n/2) = O(N)
 // 
+
+*/
+
+// Optimal solution:
+function RearrangeElementsBysign(){
+
+let arr = [3,1,-2,-5,2,-4];
+let ans = [];
+let positive_index = 0;
+let Negative_index = 1;
+
+for(let i=0;i<arr.length;i++){
+    
+    if(arr[i]<0){
+        ans[Negative_index] = arr[i];
+        Negative_index +=2;
+    }
+    else{
+        ans[positive_index] = arr[i];
+        positive_index +=2;
+    }
+
+
+}
+return ans;
+}
+
+let res = RearrangeElementsBysign();
+console.log(res);
+
+// this optimal solution code takes tc is O(N)
+// and space complexity is O(N)
