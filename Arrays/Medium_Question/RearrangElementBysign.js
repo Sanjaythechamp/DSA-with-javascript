@@ -45,7 +45,7 @@ console.log(res);
 
 */
 
-// Optimal solution:
+// Optimal solution: This code appicable if array consist of equal no of positves and Negatives elements in the array:
 function RearrangeElementsBysign(){
 
 let arr = [3,1,-2,-5,2,-4];
