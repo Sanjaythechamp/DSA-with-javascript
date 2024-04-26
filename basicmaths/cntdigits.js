@@ -2,7 +2,7 @@ function countDigits(n) {
     let x = n;
     let count = 0;
     while (x !== 0) {
-        x = Math.floor(x / 10);
+        x = Math.floor(x / 10);  // Math.floor gives the flooting point no into integer:
         count++;
     }
     return count;
