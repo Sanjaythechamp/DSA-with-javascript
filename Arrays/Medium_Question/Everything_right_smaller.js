@@ -41,7 +41,7 @@ console.log(result)
 
 
 
-// OPTIMAL APPROACH :
+// OPTIMAL APPROACH : optimal approach:
 
 // SMALLEST NO IS  = Number.MIN_SAFE_INTEGER
 
