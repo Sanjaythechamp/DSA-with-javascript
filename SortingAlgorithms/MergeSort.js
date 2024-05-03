@@ -55,3 +55,7 @@ let arr = [3,1,2,3,1,5,6,2,4];
 let n = arr.length;
 Mergesort(arr,0,n-1);
 console.log(arr);
+
+
+// Tc of this code will be -> O(nlogn)
+// sc will be O(N)
