@@ -1,4 +1,4 @@
-function SearchElement(){
+function SearchElement_RotatedArray(){
 
     let arr = [4,5,6,7,0,1,2];
     let target = 0;
@@ -36,5 +36,5 @@ function SearchElement(){
 return -1;
 
 }
-let res_index = SearchElement();
+let res_index = SearchElement_RotatedArray();
 console.log(`The element is found at ${res_index}`)
