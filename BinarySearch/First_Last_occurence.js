@@ -52,7 +52,7 @@ return {first_occurence,last_occurence};
 
       if (arr[mid] >= x) {
           ans = mid; // Update ans to current index
-          high = mid - 1; // Move to the left side
+          high = mid - 1; // Move to the left side because of to find the  first occurence .
       } else {
           low = mid + 1; // Move to the right side
       }
