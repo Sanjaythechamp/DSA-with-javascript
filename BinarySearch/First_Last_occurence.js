@@ -43,49 +43,67 @@ return {first_occurence,last_occurence};
  // Optimal Solution :
  
  
- function LowerBound(arr, n, x) {
+ // look for  first occurence on the left half
+ function firstOccurrence(){
+  let x= 8;
+  let arr = [2,4,6,8,8,8,11,13];
+    let first =-1;
+
   let low = 0;
-  let high = n - 1;
-  let ans = n; // Initialize ans to n (out of bounds value)
-  while (low <= high) {
-      let mid = Math.floor((low + high) / 2);
+  let high = arr.length-1;
 
-      if (arr[mid] >= x) {
-          ans = mid; // Update ans to current index
-          high = mid - 1; // Move to the left side because of to find the  first occurence .
-      } else {
-          low = mid + 1; // Move to the right side
-      }
+  while(low<=high){
+    let mid = Math.floor((low+high)/2);
+
+    if(arr[mid]===x){
+      first = mid;
+      high = mid-1;
+    }
+    else if(arr[mid]>x){
+      high = mid-1;
+
+    }
+    else{
+      low = mid+1;
+    }
+
   }
-  return ans;
-}
 
-function UpperBound(arr, n, x) {
-  let low = 0;
-  let high = n - 1;
-  let ans = n; // Initialize ans to n (out of bounds value)
-  while (low <= high) {
-      let mid = Math.floor((low + high) / 2);
-
-      if (arr[mid] > x) {
-          ans = mid; // Update ans to current index
-          high = mid - 1; // Move to the left side
-      } else {
-          low = mid + 1; // Move to the right side
-      }
-  }
-  return ans;
-}
-function first_last() {
-  let arr = [2, 4, 6, 8, 8, 8, 11, 13];
-  let n = arr.length;
-  let x = 8;
-
-  let first = LowerBound(arr, n, x);
-  let last = UpperBound(arr, n, x);
-
-  // one condition see  in the copy :
-// condition is if first and last occurence not find then  we return -1 -1 
+return first ;
+ }
 
  
-first_last();
+ function lastOccurrence() {
+  let x= 8;
+  let arr = [2,4,6,8,8,8,11,13];
+    let last =-1;
+
+  let low = 0;
+  let high = arr.length-1;
+
+  while (low <= high) {
+      let mid = Math.floor((low + high) / 2);
+      // maybe an answer
+      if (arr[mid] === x) {
+          last = mid;
+          // look for larger index on the right
+          low = mid + 1;
+      }
+      else if (arr[mid] < x) {
+          low = mid + 1; // look on the right
+      }
+      else {
+          high = mid - 1; // look on the left
+      }
+  }
+  return last;
+}
+
+ 
+let first = firstOccurrence();
+let last = lastOccurrence();
+
+console.log(first)
+console.log(last)
+
+
