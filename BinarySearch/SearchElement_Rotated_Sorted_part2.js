@@ -48,4 +48,4 @@ console.log(result)
 
 
 //Tc of this code is O(log2N) [logbase2N]
-// for worst case is O(log)
+// for worst case is approx O(n/2)
