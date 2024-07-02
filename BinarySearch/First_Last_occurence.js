@@ -57,7 +57,7 @@ return {first_occurence,last_occurence};
 
     if(arr[mid]===x){
       first = mid;
-      high = mid-1;
+      high = mid-1;   // here we do mid-1 because we check for first occurence in the element  and for first we go left 
     }
     else if(arr[mid]>x){
       high = mid-1;
@@ -83,11 +83,11 @@ return first ;
 
   while (low <= high) {
       let mid = Math.floor((low + high) / 2);
-      // maybe an answer
+      
       if (arr[mid] === x) {
           last = mid;
-          // look for larger index on the right
-          low = mid + 1;
+        
+          low = mid + 1;   // here we do mid+1 because we  find last occurence so to  find last occurence we move right .
       }
       else if (arr[mid] < x) {
           low = mid + 1; // look on the right
