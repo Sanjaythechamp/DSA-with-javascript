@@ -21,4 +21,4 @@ function Minimum(){
 
 }
 let result = Minimum();
-console.log(result);
+console.log(`Minimum is ${result}`);
