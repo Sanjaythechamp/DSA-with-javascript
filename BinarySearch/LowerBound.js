@@ -17,7 +17,7 @@ function LowerBound(){
         }
         else if(arr[mid]>=target){
             ans = mid;
-            high = mid-1;
+            high = mid-1; // here we do mid-1. if mid is greater than or equal to target value then our ans might be mid ,else mid-1
         }
         else{
          low = mid+1;
