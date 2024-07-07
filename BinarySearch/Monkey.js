@@ -9,7 +9,7 @@ for(let i=0;i<piles.length;i++){
 
 }
 
-return ans ;
+return ans ;           // here ans is when mid divided by each of the bananas and count the the hours take 
   
 
 }
