@@ -1,5 +1,5 @@
  // Return the minimum interger[bananas/hour] ,such that koko can eat all bananas within h hours.
-
+ //Math.ceil(4.2);  // Output: 5
 
  function hours_count(piles,mid){
     let ans = 0;
