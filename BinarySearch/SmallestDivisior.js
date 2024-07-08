@@ -1,5 +1,7 @@
 // find the smallest divisior given a threshold :
 
+// optimal approach
+
 function SumOfdivisior(arr,mid){
 let sum = 0;
     for(let i=0;i<arr.length;i++){
