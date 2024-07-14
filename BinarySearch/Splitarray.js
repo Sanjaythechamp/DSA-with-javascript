@@ -1,3 +1,5 @@
+// this code is same as allocation of books or painter problem
+
 function countSubarray(arr,mid,k){
     let sum = 0;
     let countSubarray =1;
