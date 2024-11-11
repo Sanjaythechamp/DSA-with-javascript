@@ -28,6 +28,9 @@ The octal number 0342313045 can be broken down as:
 */
 
  // also we do as 
+// some concept related to  length method : 
+//The length property in JavaScript is a commonly used feature of both strings and arrays,
+//and it works a bit differently for each. 
 
  function cnt(n){
 
@@ -35,5 +38,16 @@ let x = n.toString();
 return x.length;
 
  }
+
+
   let result = cnt(444)
   console.log(`${result}`)
+
+
+      /*
+[ for practice only]
+let n = 5432434;
+let x = n.toString();
+console.log(x.length)
+becaue we can only find the length of string and array not a number ,thats why we convert firstly into string then findout length;
+*/
